@@ -2,8 +2,12 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-app.get('/', function(request, response) {
-  response.send('Hello World!');
+app.get('/', function(request, res) {
+  res.sendfile(__dirname + "/html/index.html");
+});
+
+app.get('*.js|*.css|*.jpg|*.gif|*.png', function (req,res){
+  res.sendfile(__dirname + req.url);
 });
 
 var port = process.env.PORT || 5000;

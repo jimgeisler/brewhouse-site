@@ -1,0 +1,18 @@
+
+h1.main {
+	color: #ddd;
+	line-height: 300%;
+	margin-top: 0px;
+	text-align: center;
+}
+div.color_me {
+	background: #555;
+}
+#logo {
+
+}
+
+.hero-unit p {
+    color: #6D941B;
+    font-weight: bold;
+}

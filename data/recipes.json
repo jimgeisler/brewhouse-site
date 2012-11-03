@@ -1,0 +1,59 @@
+{"recipes" : [
+	{
+		"name" : "I Hardly Knew Her",
+		"style" : "Porter",
+		"brewers" : ["Jim"],
+	 	"desc" : "The roasted grain flavor is followed by a hint of molasses and butterscotch. This black, full bodied porter is sold in England as a Strong Stout. It was originally named for train porters who were its servers and consumers.",
+		"brew_date" : "9/29/2012",
+	 	"grain_bill" : ["9 lbs. Domestic 2-Row barley",
+						"8 oz. Crystal 50-60L",
+						"8 oz. Black Malt"],
+	 	"yeast" : "Safale US-05",
+		"hops" : {
+			"bitter" : "1 ½  oz Kent Goldings",
+			"aroma" : "1 oz Fuggle"
+		},
+		"batch_size" : "5",
+		"boil_time" : "60",
+		"abv" : "5.5",
+		"OG" : "1.052",
+		"FG" : "1.010",
+		"other_ingredients" : ["Molasses for last 15 minutes", "Irish Moss for last 15 minutes"]	
+	},
+	{
+		"name" : "A Pumpkin for my Pumpkin",
+		"style" : "Pumpkin Spiced Ale",
+		"brewers" : ["Jim"],
+	 	"desc" : "A light brown ale with pumpkin flavor and spices.",
+		"brew_date" : "10/3/2012",
+	 	"grain_bill" : ["10 lbs. US Pale 2 Row","1 lb. US Crystal 40L","8 oz. German Caramel Wheat"],
+	 	"yeast" : "Safale US-05",
+		"hops" : {
+			"bitter" : "1 oz Mount Hood",
+			"flavor" : "1 oz Cascade"
+		},
+		"batch_size" : "6",
+		"boil_time" : "60",
+		"abv" : "6.04",
+		"OG" : "1.052",
+		"FG" : "1.006",
+		"other_ingredients" : ["75 oz canned pumpkin for last 15 minutes of boil", "2 tsp cinnamon for last 5 minutes", "2 tsp nutmeg for last 5 minutes"]	
+	},
+	{
+		"name" : "I Am Your Father",
+		"style" : "Black IPA",
+		"brewers" : ["Jim"],
+	 	"desc" : "",
+		"brew_date" : "10/3/2012",
+	 	"grain_bill" : ["15 lbs. US Pale 6 Row","10 oz. English Chocolate"],
+	 	"yeast" : "WPL 007",
+		"hops" : {
+			"bitter" : "1 oz Chinook 1 oz Nugget",
+			"aroma" : "1 oz Chinook 1 oz Nugget",
+			"dry" : "1 oz Nugget"
+		},
+		"batch_size" : "6",
+		"boil_time" : "90",
+		"OG" : "1.040"
+	}
+]}

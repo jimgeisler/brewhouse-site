@@ -1,0 +1,16 @@
+!!! 5
+html(lang='en')  
+    head  
+        title= '8 Bit BrewHouse'
+        link(rel='stylesheet', href='/css/bootstrap-responsive.css')
+        link(rel='stylesheet', href='/css/brewstrap.css')
+        link(rel='stylesheet', href='/css/brew.css')      
+    body
+        div.color_me
+            h1.main 8 bit <img src="/img/hops_8bit.png" id="logo" /> brewhouse
+        div.container
+            div.navbar!=partial('navigation.jade')
+            div.content!= body
+        script(src="/js/jquery-1.7.js")
+        script(src="/js/bootstrap.min.js")
+            

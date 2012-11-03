@@ -6,7 +6,7 @@ app.get('/', function(request, res) {
   res.sendfile(__dirname + "/html/index.html");
 });
 
-app.get('*.js|*.css|*.jpg|*.gif|*.png', function (req,res){
+app.get('*.js|*.css|*.jpg|*.gif|*.png|*.ttf', function (req,res){
   res.sendfile(__dirname + req.url);
 });
 

@@ -137,7 +137,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: Raleway;
+  font-family: eightbitfont;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -503,7 +503,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: Megrim;
+  font-family: eightbitfont;
   font-weight: bold;
   line-height: 1;
   color: inherit;
@@ -748,7 +748,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Raleway;
+  font-family: eightbitfont;
 }
 label {
   display: block;

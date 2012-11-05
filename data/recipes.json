@@ -18,6 +18,7 @@
 		"abv" : "5.5",
 		"OG" : "1.052",
 		"FG" : "1.010",
+		"untappd" : "http://untappd.com/beer/232834",
 		"other_ingredients" : ["Molasses for last 15 minutes", "Irish Moss for last 15 minutes"]	
 	},
 	{
@@ -37,7 +38,30 @@
 		"abv" : "6.04",
 		"OG" : "1.052",
 		"FG" : "1.006",
+		"untappd" : "http://untappd.com/beer/250654",
 		"other_ingredients" : ["75 oz canned pumpkin for last 15 minutes of boil", "2 tsp cinnamon for last 5 minutes", "2 tsp nutmeg for last 5 minutes"]	
+	},
+	{
+	"name" : "It's The Great Pumpkin Beer, Charlie Brown",
+	"style" : "Pumpkin Beer",
+	"brewers" : ["Brent"],
+	"desc" : "An attempted clone of Southern Tier's Pumking.  The spices are well balanced and the beer finishes nicely.  The color is a nice medium brown, however it tastes a bit lighter than expected.",
+	"brew_date" : "10/13/2012",
+	"grain_bill" : ["10.5 lbs. American Two-Row Pale",
+	"3 ½ lbs. Pumpkin",
+	"1 lb. Crystal 60L"],
+	"yeast" : "Safale US-05",
+	"hops" : {
+	"bitter" : "½ oz Magnum",
+	"aroma" : "1 oz Sterling"
+	},
+	"batch_size" : "3.5",
+	"boil_time" : "60",
+	"abv" : "7",
+	"OG" : "1.064",
+	"FG" : "1.010",
+	"untappd" : "http://untappd.com/beer/250698",
+	"other_ingredients" : ["1 tsp Allspice for 3 mins", "1 tsp Cinnamon for 3 mins", "1 tsp Cloves for 3 mins", "1 tsp Ginger Powder for 3 mins", "1 tsp Nutmeg for 3 mins", "2 oz Vanilla Extract @ bottling"]
 	},
 	{
 		"name" : "I Am Your Father",
@@ -54,6 +78,9 @@
 		},
 		"batch_size" : "6",
 		"boil_time" : "90",
-		"OG" : "1.040"
+		"OG" : "1.040",
+		"FG" : "1.009",
+		"abv" : "4.07",
+		"yeast_starter" : "2L"
 	}
 ]}

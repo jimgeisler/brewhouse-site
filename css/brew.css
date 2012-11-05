@@ -6,7 +6,12 @@ src: url('8_BIT_WONDER.TTF');
 }
 
 body {
-    font-size: 60%;
+
+}
+
+div.navbar {
+    font-family: eightbitfont;
+    font-size: 80%;
 }
 
 div.brewers h5,h2 {
@@ -20,6 +25,7 @@ h1.main {
 	text-align: center;
 	background: #000;
 	border-bottom: 10px dotted white;
+    font-family: eightbitfont;
 }
 div.color_me {
     background: #000;
@@ -33,4 +39,17 @@ div.color_me {
 .hero-unit p {
     color: #6D941B;
     font-weight: bold;
+}
+
+div.recipe {
+    border-bottom: 4px dotted black;
+}
+
+h3 {
+    color: #007b00;
+}
+
+span.text {
+    font-weight: bold;
+    font-size: 105%;
 }

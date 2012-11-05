@@ -1,11 +1,65 @@
 h1 Recipes
 
 each recipe in recipes
-    h4= recipe.name
-    p= recipe.style
-    p= recipe.desc
-    p= recipe.abv
-    
+    div.well
+        h3 #{recipe.name}  
+            each brewer in recipe.brewers
+                img(src="/img/#{brewer}_tiny.png")
+        p 
+            span.text Style: 
+            span #{recipe.style}
+        - if (recipe.abv)
+            p
+                span.text ABV: 
+                span #{recipe.abv}%
+        - if (recipe.desc)
+            p 
+                span.text Description: 
+                span #{recipe.desc}
+        p
+            span.text Brew date: 
+            span #{recipe.brew_date}
+        p
+            span.text Grain Bill
+        ul
+            each grain in recipe.grain_bill
+                li #{grain}
+        - if (recipe.other_ingredients)
+            p
+                span.text Other Ingredients
+            ul
+                each ingredient in recipe.other_ingredients
+                    li #{ingredient}
+        p
+            span.text Hop Bill
+        ul
+            - if (recipe.hops.bitter)
+                li Bitter: #{recipe.hops.bitter}
+            - if (recipe.hops.flavor)
+                li Flavor: #{recipe.hops.flavor}
+            - if (recipe.hops.aroma)
+                li Aroma: #{recipe.hops.aroma}
+            - if (recipe.hops.dry)
+                li Dry: #{recipe.hops.dry}
+        p
+            span.text Yeast: 
+            span #{recipe.yeast}
+        - if (recipe.yeast_starter)
+            p
+                span.text Starter size: 
+                span #{recipe.yeast_starter}
+        p
+            span.text Boil time: 
+            span #{recipe.boil_time}
+        p
+            span.text OG: 
+            span #{recipe.OG}
+        p 
+            span.text FG: 
+            span #{recipe.FG}
+        - if (recipe.untappd)
+            p
+                a(href="#{recipe.untappd}", target="_blank") See more info and ratings on Untappd
     
 <script>
 $(function() {

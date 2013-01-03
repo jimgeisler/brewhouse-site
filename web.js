@@ -7,6 +7,8 @@ app.use(express.static(__dirname));
 
 app.get('/', function(req, res){res.render('index.jade');});
 
+app.get('/brewsnwood', function(req, res){res.render('brewsnwood.jade');});
+
 app.get('/recipes', function(req, res){
     var file = './data/recipes.json';
 

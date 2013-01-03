@@ -1,5 +1,28 @@
 {"recipes" : [
 	{
+		"name" : "Humulone Don't Play 'Dat",
+		"style" : "IPA",
+		"brewers" : ["jim"],
+	 	"desc" : "A hop hop hoppy IPA.",
+		"brew_date" : "12/23/2012",
+	 	"grain_bill" : [						
+			"12 lbs. U.S. (Briess) Pale 2-Row",
+			"1 lbs. Belgian (Dingemans) Cara Vienne"],
+	 	"yeast" : "Safale US-05",
+		"hops" : {
+			"bitter" : "1 oz Kent Magnum",
+			"flavor" : "1 oz Amarillo",
+			"aroma" : "2 oz Cascade"
+		},
+		"batch_size" : "5",
+		"boil_time" : "60",
+		"abv" : "6.96",
+		"OG" : "1.064",
+		"FG" : "1.011",
+		"untappd" : "https://untappd.com/beer/289006",
+		"other_ingredients" : []	
+	},
+	{
 		"name" : "I Hardly Knew Her",
 		"style" : "Porter",
 		"brewers" : ["jim"],
@@ -20,6 +43,29 @@
 		"FG" : "1.010",
 		"untappd" : "http://untappd.com/beer/232834",
 		"other_ingredients" : ["Molasses for last 15 minutes", "Irish Moss for last 15 minutes"]	
+	},
+	{
+		"name" : "I Hardly Knew Her Too",
+		"style" : "Porter",
+		"brewers" : ["jim"],
+	 	"desc" : "",
+		"brew_date" : "11/13/2012",
+	 	"grain_bill" : ["11 lbs. Domestic 2-Row barley",
+						"10 oz. Crystal 50-60L",
+						"10 oz. Black Malt",
+						"10 oz. Chococlate Malt"],
+	 	"yeast" : "WPL 004",
+		"hops" : {
+			"bitter" : "2 oz Kent Goldings",
+			"aroma" : "1 oz Fuggle"
+		},
+		"batch_size" : "5",
+		"boil_time" : "90",
+		"abv" : "",
+		"OG" : "1.061",
+		"FG" : "1.018",
+		"untappd" : "",
+		"other_ingredients" : ["Irish Moss for last 15 minutes"]	
 	},
 	{
 		"name" : "A Pumpkin for my Pumpkin",

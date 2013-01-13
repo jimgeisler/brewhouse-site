@@ -1,132 +1,207 @@
-{"recipes" : [
-	{
-		"name" : "Humulone Don't Play 'Dat",
-		"style" : "IPA",
-		"brewers" : ["jim"],
-	 	"desc" : "A hop hop hoppy IPA.",
-		"brew_date" : "12/23/2012",
-	 	"grain_bill" : [						
-			"12 lbs. U.S. (Briess) Pale 2-Row",
-			"1 lbs. Belgian (Dingemans) Cara Vienne"],
-	 	"yeast" : "Safale US-05",
-		"hops" : {
-			"bitter" : "1 oz Kent Magnum",
-			"flavor" : "1 oz Amarillo",
-			"aroma" : "2 oz Cascade"
-		},
-		"batch_size" : "5",
-		"boil_time" : "60",
-		"abv" : "6.96",
-		"OG" : "1.064",
-		"FG" : "1.011",
-		"untappd" : "https://untappd.com/beer/289006",
-		"other_ingredients" : []	
-	},
-	{
-		"name" : "I Hardly Knew Her",
-		"style" : "Porter",
-		"brewers" : ["jim"],
-	 	"desc" : "The roasted grain flavor is followed by a hint of molasses and butterscotch. This black, full bodied porter is sold in England as a Strong Stout. It was originally named for train porters who were its servers and consumers.",
-		"brew_date" : "9/29/2012",
-	 	"grain_bill" : ["9 lbs. Domestic 2-Row barley",
-						"8 oz. Crystal 50-60L",
-						"8 oz. Black Malt"],
-	 	"yeast" : "Safale US-05",
-		"hops" : {
-			"bitter" : "1 ½  oz Kent Goldings",
-			"aroma" : "1 oz Fuggle"
-		},
-		"batch_size" : "5",
-		"boil_time" : "60",
-		"abv" : "5.5",
-		"OG" : "1.052",
-		"FG" : "1.010",
-		"untappd" : "http://untappd.com/beer/232834",
-		"other_ingredients" : ["Molasses for last 15 minutes", "Irish Moss for last 15 minutes"]	
-	},
-	{
-		"name" : "I Hardly Knew Her Too",
-		"style" : "Porter",
-		"brewers" : ["jim"],
-	 	"desc" : "",
-		"brew_date" : "11/13/2012",
-	 	"grain_bill" : ["11 lbs. Domestic 2-Row barley",
-						"10 oz. Crystal 50-60L",
-						"10 oz. Black Malt",
-						"10 oz. Chococlate Malt"],
-	 	"yeast" : "WPL 004",
-		"hops" : {
-			"bitter" : "2 oz Kent Goldings",
-			"aroma" : "1 oz Fuggle"
-		},
-		"batch_size" : "5",
-		"boil_time" : "90",
-		"abv" : "",
-		"OG" : "1.061",
-		"FG" : "1.018",
-		"untappd" : "",
-		"other_ingredients" : ["Irish Moss for last 15 minutes"]	
-	},
-	{
-		"name" : "A Pumpkin for my Pumpkin",
-		"style" : "Pumpkin Spiced Ale",
-		"brewers" : ["jim"],
-	 	"desc" : "A light brown ale with pumpkin flavor and spices.",
-		"brew_date" : "10/3/2012",
-	 	"grain_bill" : ["10 lbs. US Pale 2 Row","1 lb. US Crystal 40L","8 oz. German Caramel Wheat"],
-	 	"yeast" : "Safale US-05",
-		"hops" : {
-			"bitter" : "1 oz Mount Hood",
-			"flavor" : "1 oz Cascade"
-		},
-		"batch_size" : "6",
-		"boil_time" : "60",
-		"abv" : "6.04",
-		"OG" : "1.052",
-		"FG" : "1.006",
-		"untappd" : "http://untappd.com/beer/250654",
-		"other_ingredients" : ["75 oz canned pumpkin for last 15 minutes of boil", "2 tsp cinnamon for last 5 minutes", "2 tsp nutmeg for last 5 minutes"]	
-	},
-	{
-	"name" : "It's The Great Pumpkin Beer, Charlie Brown",
-	"style" : "Pumpkin Beer",
-	"brewers" : ["brent"],
-	"desc" : "An attempted clone of Southern Tier's Pumking.  The spices are well balanced and the beer finishes nicely.  The color is a nice medium brown, however it tastes a bit lighter than expected.",
-	"brew_date" : "10/13/2012",
-	"grain_bill" : ["10.5 lbs. American Two-Row Pale",
-	"3 ½ lbs. Pumpkin",
-	"1 lb. Crystal 60L"],
-	"yeast" : "Safale US-05",
-	"hops" : {
-	"bitter" : "½ oz Magnum",
-	"aroma" : "1 oz Sterling"
-	},
-	"batch_size" : "3.5",
-	"boil_time" : "60",
-	"abv" : "7",
-	"OG" : "1.064",
-	"FG" : "1.010",
-	"untappd" : "http://untappd.com/beer/250698",
-	"other_ingredients" : ["1 tsp Allspice for 3 mins", "1 tsp Cinnamon for 3 mins", "1 tsp Cloves for 3 mins", "1 tsp Ginger Powder for 3 mins", "1 tsp Nutmeg for 3 mins", "2 oz Vanilla Extract @ bottling"]
-	},
-	{
-		"name" : "I Am Your Father",
-		"style" : "Black IPA",
-		"brewers" : ["jim"],
-	 	"desc" : "",
-		"brew_date" : "10/3/2012",
-	 	"grain_bill" : ["15 lbs. US Pale 6 Row","10 oz. English Chocolate"],
-	 	"yeast" : "WPL 007",
-		"hops" : {
-			"bitter" : "1 oz Chinook 1 oz Nugget",
-			"aroma" : "1 oz Chinook 1 oz Nugget",
-			"dry" : "1 oz Nugget"
-		},
-		"batch_size" : "6",
-		"boil_time" : "90",
-		"OG" : "1.040",
-		"FG" : "1.009",
-		"abv" : "4.07",
-		"yeast_starter" : "2L"
-	}
-]}
+{
+     "recipes": [
+          {
+               "name": "Humulone Don't Play 'Dat",
+               "style": "IPA",
+               "brewers": [
+                    "jim"
+               ],
+               "desc": "A hop hop hoppy IPA.",
+               "brew_date": "12/23/2012",
+               "grain_bill": [
+                    "12 lbs. U.S. (Briess) Pale 2-Row",
+                    "1 lbs. Belgian (Dingemans) Cara Vienne"
+               ],
+               "yeast": "Safale US-05",
+               "hops": {
+                    "bitter": "1 oz Kent Magnum",
+                    "flavor": "1 oz Amarillo",
+                    "aroma": "2 oz Cascade"
+               },
+               "batch_size": "5",
+               "boil_time": "60",
+               "abv": "6.96",
+               "OG": "1.064",
+               "FG": "1.011",
+               "untappd": "https://untappd.com/beer/289006",
+               "other_ingredients": []
+          },
+          {
+               "name": "I Hardly Knew Her",
+               "style": "Porter",
+               "brewers": [
+                    "jim"
+               ],
+               "desc": "The roasted grain flavor is followed by a hint of molasses and butterscotch. This black, full bodied porter is sold in England as a Strong Stout. It was originally named for train porters who were its servers and consumers.",
+               "brew_date": "9/29/2012",
+               "grain_bill": [
+                    "9 lbs. Domestic 2-Row barley",
+                    "8 oz. Crystal 50-60L",
+                    "8 oz. Black Malt"
+               ],
+               "yeast": "Safale US-05",
+               "hops": {
+                    "bitter": "1 ½  oz Kent Goldings",
+                    "aroma": "1 oz Fuggle"
+               },
+               "batch_size": "5",
+               "boil_time": "60",
+               "abv": "5.5",
+               "OG": "1.052",
+               "FG": "1.010",
+               "untappd": "http://untappd.com/beer/232834",
+               "other_ingredients": [
+                    "Molasses for last 15 minutes",
+                    "Irish Moss for last 15 minutes"
+               ]
+          },
+          {
+               "name": "I Hardly Knew Her Too",
+               "style": "Porter",
+               "brewers": [
+                    "jim"
+               ],
+               "desc": "",
+               "brew_date": "11/13/2012",
+               "grain_bill": [
+                    "11 lbs. Domestic 2-Row barley",
+                    "10 oz. Crystal 50-60L",
+                    "10 oz. Black Malt",
+                    "10 oz. Chococlate Malt"
+               ],
+               "yeast": "WPL 004",
+               "hops": {
+                    "bitter": "2 oz Kent Goldings",
+                    "aroma": "1 oz Fuggle"
+               },
+               "batch_size": "5",
+               "boil_time": "90",
+               "abv": "",
+               "OG": "1.061",
+               "FG": "1.018",
+               "untappd": "",
+               "other_ingredients": [
+                    "Irish Moss for last 15 minutes"
+               ]
+          },
+          {
+               "name": "A Pumpkin for my Pumpkin",
+               "style": "Pumpkin Spiced Ale",
+               "brewers": [
+                    "jim"
+               ],
+               "desc": "A light brown ale with pumpkin flavor and spices.",
+               "brew_date": "10/3/2012",
+               "grain_bill": [
+                    "10 lbs. US Pale 2 Row",
+                    "1 lb. US Crystal 40L",
+                    "8 oz. German Caramel Wheat"
+               ],
+               "yeast": "Safale US-05",
+               "hops": {
+                    "bitter": "1 oz Mount Hood",
+                    "flavor": "1 oz Cascade"
+               },
+               "batch_size": "6",
+               "boil_time": "60",
+               "abv": "6.04",
+               "OG": "1.052",
+               "FG": "1.006",
+               "untappd": "http://untappd.com/beer/250654",
+               "other_ingredients": [
+                    "75 oz canned pumpkin for last 15 minutes of boil",
+                    "2 tsp cinnamon for last 5 minutes",
+                    "2 tsp nutmeg for last 5 minutes"
+               ]
+          },
+          {
+               "name": "It's The Great Pumpkin Beer, Charlie Brown",
+               "style": "Pumpkin Beer",
+               "brewers": [
+                    "brent"
+               ],
+               "desc": "An attempted clone of Southern Tier's Pumking.  The spices are well balanced and the beer finishes nicely.  The color is a nice medium brown, however it tastes a bit lighter than expected.",
+               "brew_date": "10/13/2012",
+               "grain_bill": [
+                    "10.5 lbs. American Two-Row Pale",
+                    "3 ½ lbs. Pumpkin",
+                    "1 lb. Crystal 60L"
+               ],
+               "yeast": "Safale US-05",
+               "hops": {
+                    "bitter": "½ oz Magnum",
+                    "aroma": "1 oz Sterling"
+               },
+               "batch_size": "3.5",
+               "boil_time": "60",
+               "abv": "7",
+               "OG": "1.064",
+               "FG": "1.010",
+               "untappd": "http://untappd.com/beer/250698",
+               "other_ingredients": [
+                    "1 tsp Allspice for 3 mins",
+                    "1 tsp Cinnamon for 3 mins",
+                    "1 tsp Cloves for 3 mins",
+                    "1 tsp Ginger Powder for 3 mins",
+                    "1 tsp Nutmeg for 3 mins",
+                    "2 oz Vanilla Extract @ bottling"
+               ]
+          },
+          {
+               "name": "I Am Your Father",
+               "style": "Black IPA",
+               "brewers": [
+                    "jim"
+               ],
+               "desc": "",
+               "brew_date": "10/3/2012",
+               "grain_bill": [
+                    "15 lbs. US Pale 6 Row",
+                    "10 oz. English Chocolate"
+               ],
+               "yeast": "WPL 007",
+               "hops": {
+                    "bitter": "1 oz Chinook 1 oz Nugget",
+                    "aroma": "1 oz Chinook 1 oz Nugget",
+                    "dry": "1 oz Nugget"
+               },
+               "batch_size": "6",
+               "boil_time": "90",
+               "OG": "1.040",
+               "FG": "1.009",
+               "abv": "4.07",
+               "yeast_starter": "2L"
+          },
+          {
+               "name": "Porter",
+               "style": "Chocolate Porter",
+               "brewers": [
+                    "brent"
+               ],
+               "desc": "Heavy, chocolate porter that should be somewhat sweet.",
+               "brew_date": "1/8/2013",
+               "grain_bill": [
+                    "10 lbs. American Two-Row Pale",
+                    "3 lbs. Crystal 40L",
+                    "2 lbs. Chocolate Malt",
+                    "1 lb. Black Patent Malt"
+               ],
+               "yeast": "Safale S-04",
+               "hops": {
+                    "bitter": "1 oz Columbus for 60 mins"
+               },
+               "batch_size": "4.5",
+               "mash_temp": "155.5",
+               "boil_time": "60",
+               "abv": "?",
+               "OG": "1.078",
+               "FG": "?????",
+               "untappd": "http://untappd.com/beer/250698",
+               "other_ingredients": [
+                    "5 oz. Bakers Chocolate in Mash",
+                    "5 oz. Bakers Chocolate for 10 mins",
+                    "0.75 lb Lactose at Knockout"
+               ]
+          }
+     ]
+}

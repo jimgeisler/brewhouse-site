@@ -1,58 +1,68 @@
-var fs = require('fs');
-	
-parseNewRecipe = function (req, res) {
+var mongo = require('mongodb'),
+    BSON = mongo.BSONPure;
+var authentication = require('./authentication');
+
+var mongoUri = process.env.MONGOLAB_URI || 
+  process.env.MONGOHQ_URL || 
+  'mongodb://localhost:27017/brewhouse'; 
+
+isValidateRecipe = function(recipe) {
 	var requiredFields = ["name","style","brewers","grain_bill", "hops"];
-	var data = req.body;
-	console.log(data);
-	try {
-		var obj = JSON.parse(data);
-	} catch (err) {
-		res.statusCode = 400; // bad request
-		console.log('Error parsing recipe');
-		res.end('<html><body>Error parsing recipe: ' + err + '</body></html>');
-		return new Error();
+	var valid = true;
+	for (idx in requiredFields) {
+	    valid &= (recipe[requiredFields[idx]] != null);
 	}
-	if(!obj.name || !obj.style || !obj.brewers) {
-		res.statusCode = 400; // bad request
-		console.log('Recipe did not have required fields');
-		res.end('<html><body>Missing recipe required fields [name, style, brewers, grain_bill, hops]</body></html>');
-		return new Error();
-	}
-	return obj;
+    return valid;
 }
 
-addNewRecipe = function(file, newRecipe, res) {
-    fs.readFile(file, 'utf8', function (err, data) {
-		if (err) {			
-			res.statusCode = 400; // bad request
-			console.log('Error reading existing recipes: ' + err);
-			res.end('<html><body>Error reading existing recipes: ' + err + '</body></html>');
-			return new Error();
-		} else {
-			var recipes = JSON.parse(data);
-			recipes.recipes.push(newRecipe);
-			fs.writeFile(file, JSON.stringify(recipes, null, 5), function (err) {
-				if (err) {
-					res.statusCode = 400; // bad request
-					console.log('Error writing recipes: ' + err);
-					res.end('<html><body>Error writing recipes: ' + err + '</body></html>');
-				} else {
-					res.statusCode = 200; // OK
-					console.log('Recipe added');
-					res.end('<html><body>Recipe added</body></html>');
-				}
-			});
-		}		
+getAllRecipes = function(callback) {
+    mongo.Db.connect(mongoUri, function (err, db) {
+        db.collection('recipes', function(er, collection) {
+            if (er) return callback(er);
+            
+            collection.find({}, function(err, recipes) {
+                var all_recipes = [];
+                recipes.each(function(err, recipe) {
+                    if (recipe == null) return callback(null, all_recipes);
+                    else all_recipes.push(recipe);
+                })
+
+            });
+        });
     });
-}
-
-exports.createRecipe = function(req, res) {
-    var file = './data/recipes.json';
-
-	console.log("Creating recipe...");
-	var newRecipe = parseNewRecipe(req, res);
-	if (!(newRecipe instanceof Error)) {	
-		addNewRecipe(file, newRecipe, res);
-	}
 };
 
+
+/*
+ *
+ * Delete the specified recipe.
+ * recipe_id - the recipe's id
+ * callback - function(error)
+ *
+ */
+deleteRecipe = function(recipe_id, callback) {
+    var o_id = new BSON.ObjectID(recipe_id);
+    mongo.Db.connect(mongoUri, function (err, db) {
+        db.collection('recipes', function(er, collection) {
+            if (er) return callback(er);
+            collection.remove({'_id' : o_id}, function(err) {
+                return callback(err);
+            });
+        });
+    });
+};
+
+createRecipe = function(new_recipe, callback) {
+    mongo.Db.connect(mongoUri, function (err, db) {
+        db.collection('recipes', function(er, collection) {
+            collection.insert(new_recipe, {safe: true}, function(er,rs) {
+                callback(er);
+            });
+        });
+    });
+};
+
+exports.create = createRecipe;
+exports.remove = deleteRecipe;
+exports.getAll = getAllRecipes;
+exports.isValid = isValidateRecipe;

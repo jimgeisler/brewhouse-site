@@ -1,10 +1,7 @@
-exports.checkAuthentication = function(req, res) {
-    var auth = req.headers['authorization'];  
+exports.checkAuthentication = function(auth) {
     console.log("Authorization Header is: ", auth);
+    
 	if (!auth) {
-		res.statusCode=401;
-		res.setHeader('WWW-Authenticate', 'Basic realm="Secure API"');
-		res.end('<html><body>Missing credentials</body></html>');
 		return false;
 	} else {
 		var tmp = auth.split(' ');   // Split on a space, the original auth looks like  "Basic Y2hhcmxlczoxMjM0NQ==" and we need the 2nd part
@@ -16,12 +13,9 @@ exports.checkAuthentication = function(req, res) {
 		var password = creds[1];
 
 		if((username == 'broni') && (password == 'jimsucksatmagic')) {   // Is the username/password correct?
-			res.statusCode = 200;  // OK
+            return true; // OK
 		} else {
-			res.statusCode = 401; // Force them to retry authentication
-			res.setHeader('WWW-Authenticate', 'Basic realm="Secure API"');
-			res.end('<html><body>Invalid credentials</body></html>');
-			return false;
+			return false; // Retry authentication.
 		}
     }
 	return true;

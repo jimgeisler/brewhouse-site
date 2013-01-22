@@ -5,6 +5,7 @@ each recipe in recipes
         h3 #{recipe.name}  
             each brewer in recipe.brewers
                 img(src="/img/#{brewer}_tiny.png")
+        input(type="hidden", value="#{recipe._id}")
         p 
             span.text Style: 
             span #{recipe.style}
